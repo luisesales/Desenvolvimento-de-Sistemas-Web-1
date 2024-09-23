@@ -1,0 +1,31 @@
+
+:root{
+    --font: sans-serif;
+    --text_xs: 5px;
+    --text_sm: 10px;
+    --text_md: 20px;
+    --text_lg: 30px;
+    --text_xl: 40px;
+
+    --p-xs: 1.5%;
+    --p-sm: 2.5%;
+    --p-md: 5%;
+    --p-lg: 7.5%;
+    --p-xl: 10%;
+
+    --bg-blue: rgb(0, 110, 255)
+}
+body{
+    font-family: var(--font);
+}
+
+.header{
+    color: white;
+    width: 100vw;
+    height: auto;
+    background-color: var(--bg-blue);
+    font-weight: bold;    
+    font-size: var(--text_xl);
+    text-align: center;
+    padding: var(--p-xs) 0 var(--p-xs) 0;
+}
