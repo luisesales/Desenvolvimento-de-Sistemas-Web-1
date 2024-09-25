@@ -13,7 +13,10 @@
     --p-lg: 7.5%;
     --p-xl: 10%;
 
-    --bg-blue: rgb(0, 110, 255)
+    --bg-blue: rgb(0, 110, 255);
+
+    --calc-width: 40vw;
+    --calc-height: 60vh;
 }
 body{
     font-family: var(--font);
@@ -28,4 +31,26 @@ body{
     font-size: var(--text_xl);
     text-align: center;
     padding: var(--p-xs) 0 var(--p-xs) 0;
+}
+
+.line{
+    width: 100vw;
+}
+
+.calculator{
+    border-radius: 6px;
+    padding: 4% 2.5% 4% 2.5%;
+    margin: auto;
+    margin-top: 10vh;
+    width: var(--calc-width);
+    height: var(--calc-height);
+    background-color: rgb(197, 192, 192);    
+}
+
+.view{
+    border-radius: 6px;
+    background-color: rgb(250, 249, 249);
+    margin: auto;
+    width: 75%;
+    height: 15%;
 }
