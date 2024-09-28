@@ -15,20 +15,25 @@
     <div class="body">
         <div class="line">
             <div class="calculator">
-                <div class="view"></div>
+                <input type="text" id="display" class="view" disabled>
                 <div class="buttons">                   
-                    <button class="input">1</button>
-                    <button class="input">2</button>
-                    <button class="input">3</button>                    
-                    <button class="input">4</button>
-                    <button class="input">5</button>
-                    <button class="input">6</button>
-                    <button class="input">7</button>
-                    <button class="input">8</button>
-                    <button class="input">9</button>
-                    <button class="input">CA</button>
-                    <button class="input">0</button>
-                    <button class="input">=</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">1</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">2</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">3</button>                    
+                    <button class="input button" onclick="adicionarValor(this.innerText)">4</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">5</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">6</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">7</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">8</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">9</button>
+                    <button class="input button" onclick="limparDisplay()">CA</button>
+                    <button class="input button" onclick="adicionarValor(this.innerText)">0</button>
+                    <button class="input button" onclick="calcular()">=</button>
+                    <button class="operation button" onclick="adicionarValor(this.innerText)">+</button>
+                    <button class="operation button" onclick="adicionarValor(this.innerText)">-</button>
+                    <button class="operation button" onclick="adicionarValor(this.innerText)">*</button>
+                    <button class="operation button" onclick="adicionarValor(this.innerText)">/</button>
+
                 </div>
             </div>
         </div>
