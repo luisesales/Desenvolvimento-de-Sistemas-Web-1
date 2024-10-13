@@ -146,6 +146,15 @@ body{
     transition: all 0.1 ease;
 }
 
+.canvas:hover{
+    cursor: pointer;
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.1 ease;
+    -moz-transition: all 0.1 ease;
+    -o-transition: all 0.1 ease;
+    -ms-transition: all 0.1 ease;
+    transition: all 0.1 ease;
+}
 
 
 .header{
@@ -159,9 +168,7 @@ body{
     padding: var(--p-xs) 0 var(--p-xs) 0;
 }
 
-.canvas{
-    width: 60%;
-    height: 60%;    
+.canvas{ 
     display: flex;
     justify-content: center;
     align-items: center;

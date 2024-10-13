@@ -4,13 +4,13 @@ const ctx = canvas.getContext('2d');
 
 canvas.addEventListener('mousemove', (event) => {
     if (!drawing) return;
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 2;
     ctx.lineCap = 'round';
     ctx.strokeStyle = '#000000';
 
     
     ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-    ctx.stroke();
+    ctx.stroke();   
     ctx.beginPath();
     ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);    
 });
