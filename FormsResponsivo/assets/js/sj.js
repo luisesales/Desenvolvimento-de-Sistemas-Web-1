@@ -6,7 +6,8 @@ function doTheTrick(){
     
     let video = document.createElement('div');   
     header.innerText = 'Seu Voto no Mito foi Registrado';     
-    video.innerHTML = ' <video class="video" autoplay><source src="./assets/js/test.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>';            
-    document.body.replaceChild(video, body);
+    video.innerHTML = ' <video class="video col-10 offset-1" autoplay><source src="./assets/js/test.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>'; 
+    video.children[0].currentTime = 42.5;        
+    document.body.replaceChild(video, body);    
 }
     

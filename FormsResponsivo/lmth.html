@@ -11,11 +11,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="line header">
-        Forms Responsivo
-    </div>   
-    <div>
-        <div class="line">
+        <div  class="line header" id="header">
+            Forms Responsivo
+        </div>   
+        <div class="line" id="body">
             <form class="forms shadow-sm offset-md-2 col-md-8 p-3 mt-5 border rounded-1">
                 <div class="container-fluid">
                     <div class="text-bold text-sm col-12">
@@ -27,27 +26,45 @@
 
                 <div class="container-fluid mt-3">
                     <div class="text-bold text-sm col-12">
-                        Idade:
+                        Email:
                     </div>
-                    <input type="number" id="age" class="form-control col-12 b-black">
-                    <div id="ageError" class="text-red text-sm col-12"></div>
+                    <input type="text" id="email" class=" form-control col-12 b-black">
+                    <div id="emailError" class="text-red text-sm col-12"></div>
+                </div>
+                
+                <div class="container-fluid mt-3">
+                    <div class="text-bold text-sm col-12">
+                        Senha:
+                    </div>
+                    <input type="password" id="password" class=" form-control col-12 b-black">
+                    <div id="passwordError" class="text-red text-sm col-12"></div>
+                </div>
+
+                <div class="container-fluid mt-3">
+                    <div class="text-bold text-sm col-12">
+                        Gênero:
+                    </div>
+                    <select id="gender" name="gender" class="form-select col-12 b-black">  
+                        <option >Masculino</option> 
+                        <option >Feminino</option> 
+                    </select>
+                        
+                        
                 </div>
             
                 <div class="container-fluid mt-3">
                     <div class="text-bold text-sm col-12">
-                        Curso:
+                        Mensagem:
                     </div>
-                    <input type="text" id="course" class="form-control col-12 b-black">
-                    <div id="courseError" class="text-red text-sm col-12"></div>
+                    <textarea id="message"  class="form-control col-12 b-black" rows="3"></textarea>
+                    <div id="messageError" class="text-red text-sm col-12"></div>
                 </div>
                 <div class="container-fluid mt-5">
                     <a><button class="btn btn-primary offset-lg-10 col-lg-2 offset-8 col-4 text-lg" onclick="doTheTrick()">Enviar</button></a>
                 </div>
             </form>
-        </div>            
-    </div>
-    </div>    
-   
+        </div>             
+</div>
     
 </body>
 </html>
